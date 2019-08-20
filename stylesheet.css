@@ -518,7 +518,7 @@ footer{
 }
 
     nav{
-        width: 80%%;
+        width: 80%;
         float: none;
         width: 100%;
         display: flex;
@@ -530,7 +530,6 @@ footer{
    
 
     .howdyimg{
-        background-size: %;
         width: 450px;
         height: auto;
     }

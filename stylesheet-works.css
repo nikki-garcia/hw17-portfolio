@@ -1,0 +1,205 @@
+body{
+    /*typeface styles*/
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+    line-height: 1.618;
+    color: white;
+
+
+   width: 1000px;
+   margin: 600px auto 600px auto;
+   background-image: url(../hw17-portfolio/images/portfolio.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 700px auto;
+   background-attachment: fixed;
+
+   
+   
+}
+
+
+
+
+.outer-div
+{
+     position: relative;
+     height: 100px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+}
+
+
+a{
+    color:#4F7FFF;
+    text-decoration: none;
+}
+
+/*Headting Styles*/
+h1,h2 {
+    /*font-family: 'Playfair Display', serif;*/
+    /*font-family: Calibre,Helvetica,Arial,sans-serif;*/
+    font-family: 'Heebo', sans-serif;
+	line-height: 1.2;
+	margin-bottom: 20px;
+    letter-spacing:2px;
+    text-align: center;
+    
+    
+}
+
+h1 {
+	font-size: 150px;
+    /*max-width: 35rem;*/
+    color: #4F7FFF;
+	
+}
+
+h2 {
+    font-size: 3rem;
+    color: #4F7FFF;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+p{
+    margin-right: 20px;
+    text-align: center;
+    color: #383737;
+}
+
+/*Nav*/
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  li {
+    float: left;
+    display: inline;
+   
+  }
+  
+  li a {
+    display: block;
+    color: #383737;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #FAD950;
+  }
+  
+  .active {
+   color: #383737;
+   font-weight: bold;
+   box-shadow: 0  5px 15px 0px rgba(0, 0, 0, .6);
+   padding: 14px 16px;
+   display: block;
+   
+
+   
+  
+  } 
+
+  
+
+  .active hover{
+    box-shadow: 0  5px 15px 0px rgba(0, 0, 0, .6);
+    
+  }
+
+  /* Pulse Animation*/
+@-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+
+/*Case Studies*/
+section{
+    margin: 100px 0 100px 0;
+}
+
+
+
+    /*Footer*/
+footer a{
+    color: #FAD950;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 0;
+    
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    
+    
+}
+
+footer{
+    background-color: #383737;
+    color: white;
+    padding: 40px;
+    line-height: 1.5;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+}
