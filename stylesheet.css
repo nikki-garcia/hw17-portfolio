@@ -490,29 +490,138 @@ footer{
     left: 0;
     width: 100%;
     z-index: 1;
+
 }
 
 
-/*Responsive when making smaller
+
+/*Responsive when making smaller*/
 @media all and (max-width: 600px){
     body{
-        background-color: black; 
+        background-color: white; 
+       
+        
+        
     }
+
+.page{
+    width: 100%;
+    position: relative;
+}
+
+    .logo{
+        display: none;
+    }
+
+.background{
+  background-size: 1450px;
+}
+
+    nav{
+        width: 80%%;
+        float: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+       
+    }
+
+   
+
+    .howdyimg{
+        background-size: %;
+        width: 450px;
+        height: auto;
+    }
+
+   .howdy{
+    order: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    max-width: 40%;
+    
+
+  }
+
+ 
+
+  .content{
+    width: 80%;
+    flex-wrap: wrap;
+    text-align: center;
+    order: 3;
+    margin: 50px auto;
+    flex: 1 auto; 
+    vertical-align: middle;
+}
+
+
+
+  .right{
+    order: 4;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+
+}
+
+
     section{
-        width: 80%;
-        flex-wrap: wrap;
-        margin: 50px auto;
-        text-align: center;
+        padding-top: 100px;
+        margin: 0;
+    
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        flex-direction: row-reverse; 
+        align-content: center;
+        justify-content: space-around;
+         
     }
+
 
     .left{
         width: 100%;
-        margin: 0;
+        order: 4;
+        flex: column-reverse;
 
+        
     }
 
-    .right{
-        width: 100%;
+
+    .gridChild{
+        width: 80%;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin: 100px auto;
+        order: 7;
     }
-}*/
+
+   
+
+    .facts{
+        margin-bottom: 300px;
+        width: 90%;
+        text-align: center;
+    }
+
+
+
+    .container1 {
+    display: none;
+    
+}
+
+footer{
+    display: none;
+
+   
+}
+
+}
+
+
+
 
