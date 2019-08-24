@@ -13,12 +13,60 @@ body{
     background-position: center;
     background-size: 700px auto;
     background-attachment: fixed;*/
-
- 
-
-   
-   
 }
+
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+   
+  /* Flexbox stuff */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    /* Text styles */
+    text-align: center;
+
+    background-image: url(../hw17-portfolio/images/hm-bkgrnd-01.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1{
+/* Text styles */
+ font-size: 5em;
+
+ /* Margins */
+ margin-top: 0;
+} 
+
+.hero .btn{
+  display: block;
+  width: 300px;
+  
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  color: #383737;
+   /* Border styles */
+   border: 3px solid black;
+
+   box-shadow: 5px 2px 2px 1px #EDA3D4;
+}
+
+.btn:hover{
+  background-color: #EC94EB;
+  color: white;
+  font-weight: bolder;
+}
+
+
 
 
 
@@ -76,47 +124,53 @@ p{
     color: #383737;
 }
 
-/*Nav*/
+//*Nav*/
 ul {
-    list-style-type: none;
-    margin-top: 10px;
-    padding: 0;
-    overflow: hidden;
-   
-  }
-  
-  li {
-    float: left;
-    display: inline;
-   
-  }
-  
-  li a {
-    display: block;
-    color: #383737;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #FAD950;
-  }
-  
-  .active {
-   color: #383737;
-   font-weight: bold;
-   box-shadow: 0  5px 15px 0px rgba(0, 0, 0, .6);
-   padding: 14px 16px;
-   display: block;
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+ 
+}
 
-  } 
+li {
+  float: left;
+  display: inline;
+  color: 
+ 
+}
 
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #4F7FFF;
+}
 
-  .active hover{
-    box-shadow: 0  5px 15px 0px rgba(0, 0, 0, .6);
-    
-  }
+.logo:active{
+  background-color: transparent;
+}
+
+li a:hover:not(.active) {
+  background-color: #FAD950;
+}
+
+.active {
+ color: ;
+ border-radius: 15px 50px;
+ font-weight: bolder
+ 
+}
+
+.active hover{
+  box-shadow: 0  5px 15px 0px rgba(0, 0, 0, .6);
+  
+}
+
+.topnav-right{
+  float: right;
+}
 
 
   /* Pulse Animation*/
@@ -159,11 +213,19 @@ ul {
   }
 
 
-/*Case Studies
-section{
-    margin: 100px 0 100px 0;
-}*/
-
+ /*footer*/
+ footer{
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  max-width: 1844px;
+  height: 1px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #383737;
+} 
 
 
     /*Footer*/
@@ -232,14 +294,6 @@ footer{
 
 
 
-
-
-
-
-
-p, h1 {
-  margin: 0; padding: 0;
-}
 
  body, .text-light-black {
    color: rgba(0,0,0,0.6);

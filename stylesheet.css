@@ -22,11 +22,7 @@
 }
 
 
-
-/*.wrap{
- height: 100%;  
-}*/
-
+/*background*/
 .background{
     background-image: url(../hw17-portfolio/images/background1-01.png);
     background-repeat: no-repeat;
@@ -108,8 +104,6 @@ p{
 }
 
 /*Nav*/
-
-
 ul {
     list-style-type: none;
     margin-top: 10px;
@@ -121,15 +115,16 @@ ul {
   li {
     float: left;
     display: inline;
+    color: 
    
   }
   
   li a {
     display: block;
-    color: #383737;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: #4F7FFF;
   }
   
   li a:hover:not(.active) {
@@ -145,6 +140,10 @@ ul {
   .active hover{
     box-shadow: 0  5px 15px 0px rgba(0, 0, 0, .6);
     
+  }
+
+  .topnav-right{
+    float: right;
   }
 
 
@@ -458,7 +457,7 @@ section {
     }
   }*/
 
-  /*Footer*/
+/*Footer*/
 footer a{
     color: #FAD950;
     text-decoration: none;
