@@ -43,6 +43,10 @@ body{
  margin-top: 0;
 } 
 
+.btn{
+  background-color: white;
+}
+
 .hero .btn{
   display: block;
   width: 300px;
@@ -124,7 +128,7 @@ p{
     color: #383737;
 }
 
-//*Nav*/
+/*Nav*/
 ul {
   list-style-type: none;
   margin-top: 10px;
@@ -136,8 +140,7 @@ ul {
 li {
   float: left;
   display: inline;
-  color: 
- 
+  color: blue;
 }
 
 li a {
@@ -157,7 +160,7 @@ li a:hover:not(.active) {
 }
 
 .active {
- color: ;
+ color: #EC94EB; ;
  border-radius: 15px 50px;
  font-weight: bolder
  
@@ -226,6 +229,118 @@ li a:hover:not(.active) {
   margin-left: auto;
   background: #383737;
 } 
+
+/*Featured Case Study*/
+#featured{
+    background-color: #383737;
+    color: white;
+    text-align: center; /* Centered text */
+    position: inherit; /* Fixed position - sit on top of the page */
+    top: 0; 
+    width: 100%; /* Full width */
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.colright {
+  background-color: black;
+
+}
+
+.caseintro{
+  padding-left: 40px; 
+  padding-right: 40px;
+  color: white;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*Two side Scroll*/
+p {
+  margin: 40px 0 40px 0;
+  text-align: left;
+}
+
+
+section {
+  display: flex;
+}
+
+section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+section div {
+  width: 50%;
+}
+
+section div.text {
+  padding: 60px;
+}
+
+div.full-image {
+	height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+div.image-1 {
+  background-image: url(photo-1.jpg);
+}
+
+div.image-2 {
+  background-image: url(photo-2.jpg);
+}
+
+div.image-3 {
+  background-image: url(photo-3.jpg);
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  header {
+    height: 75vw;
+  }
+  
+  section {
+    display: block;
+  }
+  
+  section div {
+    width:  100%;
+  }
+  
+  section div.text {
+    padding: 30px;
+  }
+  
+  div.full-image {
+    height: 100vw;
+  }
+}
+
 
 
     /*Footer*/
