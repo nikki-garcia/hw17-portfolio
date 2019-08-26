@@ -92,7 +92,7 @@ a{
 }
 
 /*Headting Styles*/
-h1,h2 {
+.hero h1,h2 {
     /*font-family: 'Playfair Display', serif;*/
     /*font-family: Calibre,Helvetica,Arial,sans-serif;*/
     font-family: 'Heebo', sans-serif;
@@ -111,12 +111,12 @@ h1 {
 	
 }
 
-h2 {
+.hero h2 {
     font-size: 3rem;
     color: #4F7FFF;
 }
 
-h3{
+.hero h3{
     font-size: 1.5rem;
     text-align: center;
     color: black;
@@ -229,13 +229,24 @@ li a:hover:not(.active) {
   margin-right: auto;
   margin-left: auto;
   background: #383737;
-} 
+}
 
 /*Featured Case Study*/
+.casestyles{
+  font-family: 'Roboto', sans-serif;
+}
+
+.casestyles h1, h2, h3, h4{
+  font-family: 'Roboto', sans-serif;
+  color: #C0362C;
+  line-height: 1em;
+}
+
+
 #featured{
     background-color: #383737;
     color: white;
-    text-align: left;
+    text-align: center;
     position: inherit; /* Fixed position - sit on top of the page */
     top: 0; 
     width: auto; /* Full width */
@@ -243,39 +254,135 @@ li a:hover:not(.active) {
     padding-bottom: 40px;
     padding-left: 40px;
   
-  
+
+    color: #fff;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    
 }
 
-/*.column {
-  float: left;
-  width: 50%;
+/*comparison slider*/
+
+div#comparison { 
+  width: 60vw;
+  height: 60vw;
+  max-width: 900px;
+  max-height: 600px;
+  overflow: hidden; 
+  margin: auto 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto; /* Full width */
+  margin-bottom: 40px;
 }
 
-.colright {
-  background-color: black;
-
-
+div#comparison figure { /*new design image*/
+  background-image: url(../hw17-portfolio/images/sfclinic/new-Home.png); 
+  background-size: cover;
+  position: relative;
+  font-size: 0;
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
 }
 
-.caseintro{
-  padding-left: 40px; 
-  padding-right: 40px;
-  color: white;
+div#comparison figure > img { 
+  position: relative;
+  width: 100%;
+  margin: 0;
 }
 
+div#comparison figure div { /*org design image*/
+  background-image: url(../hw17-portfolio/images/sfclinic/org-home.png);
+  background-size: cover;
+  position: absolute;
+  width: 50%; 
+  box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+  overflow: hidden;
+  bottom: 0;
+  height: 100%;
+}
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
+input[type=range]{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  position: relative;
+  top: -2rem; left: -2%;
+  background-color: rgba(255,255,255,0.1);
+  width: 102%; 
+}
+input[type=range]:focus { 
+  outline: none; 
+}
+input[type=range]:active { 
+  outline: none;  
+}
 
+input[type=range]::-moz-range-track { 
+  -moz-appearance:none;
+    height:15px;
+    width: 98%;
+    background-color: rgba(255,255,255,0.9); 
+    position: relative;
+    outline: none;    
+ }
+input[type=range]::active { 
+  border: none; 
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width: 20px; height: 15px;   
+    background: #C0362C;
+    border-radius: 0;
+   }
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 20px;
+  height: 15px;
+  background: #C0362C;
+  border-radius: 0;
+     }   
+input[type=range]:focus::-webkit-slider-thumb {
+    background: rgba(255,255,255,0.9);
+   }
+input[type=range]:focus::-moz-range-thumb {
+    background: rgba(255,255,255,0.9);
+   }
 
 /*Two side Scroll*/
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  margin-left: 40px;
+  line-height: 1em;
+     
+ 
+}
+
+h5{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1px;
+}
+
+.caseinfo p{
+  color: white;
+  font-size: 16px;
+}
+
+
 p {
   margin: 40px 0 40px 0;
   text-align: left;
+  font-family: 'Karla', sans-serif;
+
 }
+
 
 
 section {
@@ -293,6 +400,19 @@ section div {
 section div.text {
   padding: 60px;
   background-color: #F6F3F1;
+}
+
+section ul{
+  line-height: 1.2em;
+  list-style-type: square;
+  
+}
+
+section li{
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-family: 400i&display;
+
 }
 
 div.full-image {
@@ -313,14 +433,20 @@ width: 50vw;
 
 div.image-1 {
   background-image: url(../hw17-portfolio/images/sfclinic/Background-red.png);
+  z-index: 1;
 }
 
 div.image-2 {
-  background-image: url(images/background1-01.png);
+  background-image: url(images/sfclinic/Background-blue.png);
 }
 
 div.image-3 {
-  background-image: url(photo-3.jpg);
+  background-image: url(images/sfclinic/testing.png);
+}
+
+div.image-4 {
+  background-color: #F6F3F1;
+  background-image: url(../hw17-portfolio/images/sfclinic/doctor.jpg);
 }
 
 .full-width{
@@ -336,31 +462,61 @@ div.image-3 {
   width: 60%;
   height: 60%;
   object-fit: contain;
+  
 }
+
+.full-width {
+  background-color: #F6F3F1;
+}
+
+
+
 
 
 /*Style Guide*/
-.brandcolor {
-  align-items: center;
-  box-sizing: content-box;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  height: 13.5em;
-  justify-content: center;
-  margin-right: 2em;
-  opacity: 1;
-  padding: 0 2em;
-  position: relative;
-  transition: opacity .25s .5s ease;
-  width: 9.5em;
+.container {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.brandcolor-info {
-  font-size: .941176471em;
-  line-height: 1.875em;
+.item {
+  width: 32%;
+  padding-bottom: 1%; /* Same as width, sets height */
+  padding-left: 10px;
+  margin-top: 40px;
+
   position: relative;
-  z-index: 2;
+  
+}
+
+.item-wide { 
+  flex-grow: 2; 
+  margin-left: 40px;
+  margin-top: 40px;
+
+}
+
+
+
+/* Re-order items into rows */
+.style:nth-child(3n+1) { order: 1; }
+.style:nth-child(3n+2) { order: 2; }
+.style:nth-child(3n)   { order: 3; }
+
+/* Force new columns */
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+
+
 
 @media (max-width: 600px) {
   body {
@@ -444,7 +600,7 @@ footer{
  
 
 
-/*test2*/
+
 
 
 
@@ -862,10 +1018,5 @@ footer{
         opacity: 0;
         border-radius: 50%;
     }
+  }
 
-}
- 
-        
-     
-
-        
