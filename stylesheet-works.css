@@ -6,6 +6,7 @@ body{
 	font-size: 20px;
     line-height: 1.618;
     color: white;
+    margin: 0 auto;
     /*width: 1000px;
     margin: 600px auto 600px auto;
    background-image: url(../hw17-portfolio/images/portfolio.png);
@@ -18,7 +19,7 @@ body{
 .hero {
   /* Sizing */
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
    
   /* Flexbox stuff */
    display: flex;
@@ -74,7 +75,7 @@ body{
 
 
 
-.outer-div
+/*.outer-div
 {
      position: relative;
      height: 100px;
@@ -82,7 +83,7 @@ body{
      top: 0;
      left: 0;
      width: 100%;
-}
+}*/
 
 
 a{
@@ -234,21 +235,25 @@ li a:hover:not(.active) {
 #featured{
     background-color: #383737;
     color: white;
-    text-align: center; /* Centered text */
+    text-align: left;
     position: inherit; /* Fixed position - sit on top of the page */
     top: 0; 
-    width: 100%; /* Full width */
-    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    width: auto; /* Full width */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  
   
 }
 
-.column {
+/*.column {
   float: left;
   width: 50%;
 }
 
 .colright {
   background-color: black;
+
 
 }
 
@@ -263,7 +268,7 @@ li a:hover:not(.active) {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 
 /*Two side Scroll*/
@@ -287,6 +292,7 @@ section div {
 
 section div.text {
   padding: 60px;
+  background-color: #F6F3F1;
 }
 
 div.full-image {
@@ -299,19 +305,64 @@ div.full-image {
   top: 0;
 }
 
+/*intro image*/
+.laptop1{ 
+height: auto;
+width: 50vw;
+}
+
 div.image-1 {
-  background-image: url(photo-1.jpg);
+  background-image: url(../hw17-portfolio/images/sfclinic/Background-red.png);
 }
 
 div.image-2 {
-  background-image: url(photo-2.jpg);
+  background-image: url(images/background1-01.png);
 }
 
 div.image-3 {
   background-image: url(photo-3.jpg);
 }
 
-@media (max-width: 800px) {
+.full-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-width img{
+  width: 60vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+
+/*Style Guide*/
+.brandcolor {
+  align-items: center;
+  box-sizing: content-box;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  height: 13.5em;
+  justify-content: center;
+  margin-right: 2em;
+  opacity: 1;
+  padding: 0 2em;
+  position: relative;
+  transition: opacity .25s .5s ease;
+  width: 9.5em;
+}
+
+.brandcolor-info {
+  font-size: .941176471em;
+  line-height: 1.875em;
+  position: relative;
+  z-index: 2;
+
+@media (max-width: 600px) {
   body {
     font-size: 16px;
   }
@@ -338,8 +389,9 @@ div.image-3 {
   
   div.full-image {
     height: 100vw;
+
   }
-}
+
 
 
 
