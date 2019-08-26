@@ -411,7 +411,7 @@ section ul{
 section li{
   color: black;
   font-family: 'Karla', sans-serif;
-  font-family: 400i&display;
+  font-family: 400i:display;
 
 }
 
@@ -420,6 +420,16 @@ div.full-image {
   background-size: cover;
   background-position: center;
   
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+div.half-image {
+	height: 100vh;
+  background-size: cover;
+  background-position: center;
+
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -447,6 +457,11 @@ div.image-3 {
 div.image-4 {
   background-color: #F6F3F1;
   background-image: url(../hw17-portfolio/images/sfclinic/doctor.jpg);
+}
+
+div.image-5 {
+  background-color:#3B3B3B;
+
 }
 
 .full-width{
@@ -499,6 +514,15 @@ div.image-4 {
 
 }
 
+.hifi{
+  background-color: #BBD5DE;
+ 
+}
+
+.hifi h2{
+  color: white;
+ 
+}
 
 
 /* Re-order items into rows */
