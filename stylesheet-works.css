@@ -141,7 +141,7 @@ ul {
 li {
   float: left;
   display: inline;
-  color: blue;
+  color: #4F7FFF;
 }
 
 li a {
@@ -358,10 +358,9 @@ div.sticky {
   position: sticky;
   top: 0;
   padding: 5px;
-  margin-left: 40px;
+  margin-left: 30px;
   line-height: 1em;
-     
- 
+    
 }
 
 h5{
@@ -411,7 +410,7 @@ section ul{
 section li{
   color: black;
   font-family: 'Karla', sans-serif;
-  font-family: 400i:display;
+  font-family: 400idisplay;
 
 }
 
@@ -470,11 +469,10 @@ div.image-5 {
   justify-content: center;
 }
 
-.full-width img{
-  width: 60vw;
+.full-width img {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 60%;
+  width: 100%;
   height: 60%;
   object-fit: contain;
   
@@ -482,6 +480,20 @@ div.image-5 {
 
 .full-width {
   background-color: #F6F3F1;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -514,17 +526,6 @@ div.image-5 {
 
 }
 
-.hifi{
-  background-color: #BBD5DE;
- 
-}
-
-.hifi h2{
-  color: white;
- 
-}
-
-
 /* Re-order items into rows */
 .style:nth-child(3n+1) { order: 1; }
 .style:nth-child(3n+2) { order: 2; }
@@ -542,15 +543,31 @@ div.image-5 {
 
 
 
+
+
+
+
 @media (max-width: 600px) {
   body {
     font-size: 16px;
   }
   
+h1{
+  font-size:30px;
+}
+
   h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
   
+p{
+  font-size: 16px;
+}
+
+.logo{
+  display: none;
+}
+
   header {
     height: 75vw;
   }
@@ -559,6 +576,14 @@ div.image-5 {
     display: block;
   }
   
+.item{
+  height: 100vh;
+}
+
+.full-width img{
+  display: none;
+}
+
   section div {
     width:  100%;
   }
@@ -568,10 +593,39 @@ div.image-5 {
   }
   
   div.full-image {
-    height: 100vw;
+    height: 100vh;
+    width: 100%;
 
   }
 
+  .text{
+    width: 90%;
+
+  }
+
+.sticky{
+  width: 80%;
+}
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
 
 
 
