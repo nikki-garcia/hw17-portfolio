@@ -463,6 +463,12 @@ div.image-5 {
 
 }
 
+div.image-6 {
+  background-image: url(../hw17-portfolio/images/sfclinic/1.png);
+}
+
+
+
 .full-width{
   display: flex;
   align-items: center;
@@ -541,6 +547,16 @@ div.image-5 {
   order: 2;
 }
 
+
+.hifi img{
+  margin-top: 10%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+}
 
 
 
